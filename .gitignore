@@ -5,22 +5,27 @@ __pycache__/
 
 # Данные
 data/
-dataset/images/
+dataset/images/synthetic/
 dataset/labels/
-*.zip
+dataset/meta.csv
+dataset_yolo/
+runs/
+weights/
+
+# Предобученные веса
+*.pt
+*.onnx
+*.pth
 
 # Результаты
 result.csv
 details_*.csv
 score.json
 *.log
-
-# Модели (веса большие)
-models/*.pt
-models/*.onnx
-models/*.pth
-
-# Отчёты
 validation_report.txt
+
+# Временные
 *.utf8.txt
 scripts_dump.txt
+create_gen.py
+dataset/generator/fonts/
