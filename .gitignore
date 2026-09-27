@@ -1,0 +1,26 @@
+﻿# Виртуальное окружение
+venv/
+__pycache__/
+*.pyc
+
+# Данные
+data/
+dataset/images/
+dataset/labels/
+*.zip
+
+# Результаты
+result.csv
+details_*.csv
+score.json
+*.log
+
+# Модели (веса большие)
+models/*.pt
+models/*.onnx
+models/*.pth
+
+# Отчёты
+validation_report.txt
+*.utf8.txt
+scripts_dump.txt
