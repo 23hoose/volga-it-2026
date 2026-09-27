@@ -29,3 +29,8 @@ validation_report.txt
 scripts_dump.txt
 create_gen.py
 dataset/generator/fonts/
+dataset_finetune/
+debug_crops/
+details*.csv
+result*.csv
+test_plate*.jpg
