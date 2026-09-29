@@ -34,3 +34,4 @@ debug_crops/
 details*.csv
 result*.csv
 test_plate*.jpg
+dataset_crnn/
