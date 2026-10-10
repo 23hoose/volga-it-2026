@@ -1,0 +1,92 @@
+validate_dataset.py v1.0 — Волга-IT 2026, полуфинал, номинация «ИИ и анализ данных»
+Датасет: C:\projects\volgit\dataset
+
+== Статистика ==
+Изображений: 5000 (реальных 0, синтетических 5000, без разметки в meta 0)
+Строк в meta.csv: 5000
+Знаков по типам: {'type1b': 1735, 'type1': 1614, 'type1a': 1651}
+Реальных изображений по типам: {'type1a': 0, 'type1b': 0, 'other': 0}  (рекомендуется {'type1a': 150, 'type1b': 300, 'other': 50})
+Уникальных читаемых ГРЗ (реальные): {'type1a': 0, 'type1b': 0}  (рекомендуется {'type1a': 50, 'type1b': 100})
+Условия съёмки: {'day': 5000}
+Лицензии: {'CC-BY-4.0': 5000}
+Источники (топ): {'generated': 5000}
+Побайтовых дубликатов: 0; совпадений с отладочным набором: 0
+
+== ERROR: 0 ==
+
+== WARNING: 6656 ==
+-- labels (5000)
+   [WARNING] labels                 labels/synth_000000.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000001.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000002.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000003.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000004.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000005.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000006.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000007.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000008.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000009.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000010.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000011.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000012.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000013.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000014.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000015.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000016.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000017.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000018.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000019.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000020.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000021.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000022.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000023.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000024.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000025.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000026.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000027.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000028.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   [WARNING] labels                 labels/synth_000029.txt: bbox класса 0 не совпадает ни с одним bbox из meta.csv (лучший IoU 0.04)
+   ... ещё 4970 (см. JSON-отчёт)
+-- meta-bbox (1651)
+   [WARNING] meta-bbox              meta.csv:20: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:22: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:24: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:28: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:31: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:34: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:36: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:38: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:40: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:50: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:53: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:66: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:73: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:78: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:84: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:86: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:87: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:90: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:91: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:94: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:96: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:98: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:100: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:107: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:109: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:111: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:115: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:121: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:126: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   [WARNING] meta-bbox              meta.csv:128: type1a, но соотношение сторон bbox 4.76 — квадратный знак обычно ≈ 1.7
+   ... ещё 1621 (см. JSON-отчёт)
+-- volume (5)
+   [WARNING] volume                 <root>: реальных изображений type1a: 0, рекомендуется не менее 150
+   [WARNING] volume                 <root>: реальных изображений type1b: 0, рекомендуется не менее 300
+   [WARNING] volume                 <root>: реальных изображений other: 0, рекомендуется не менее 50
+   [WARNING] volume                 <root>: уникальных полностью читаемых ГРЗ type1a на реальных фото: 0, рекомендуется не менее 50
+   [WARNING] volume                 <root>: уникальных полностью читаемых ГРЗ type1b на реальных фото: 0, рекомендуется не менее 100
+
+Напоминание (проверяется жюри вручную): лица людей размыты; нет кадров, где человек — смысловой центр;
+материалы получены легально (п. 6.3); разметка не сфальсифицирована (п. 8).
+
+ИТОГ: валидация ПРОЙДЕНА с предупреждениями. Ошибок: 0, предупреждений: 6656.

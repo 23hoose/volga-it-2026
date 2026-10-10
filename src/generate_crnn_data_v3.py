@@ -96,13 +96,13 @@ def add_noise(img, rng, sigma=5):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--n", type=int, default=50000)
-    parser.add_argument("--out", default="dataset_crnn")
+    parser.add_argument("--out", default="dataset")
     parser.add_argument("--seed", type=int, default=SEED)
     args = parser.parse_args()
 
     rng = random.Random(args.seed)
 
-    font_path = FONT_DIR / "arialbd.ttf"
+    font_path = FONT_DIR / "RegistrationPlateUk-P4vB.ttf"
     if not font_path.exists():
         print(f"Нет шрифта {font_path}", file=sys.stderr)
         return 2

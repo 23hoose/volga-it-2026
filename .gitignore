@@ -3,35 +3,44 @@ venv/
 __pycache__/
 *.pyc
 
-# Данные
+# Временные данные (не нужны для сдачи)
 data/
-dataset/images/synthetic/
-dataset/labels/
-dataset/meta.csv
+dataset_crnn/
 dataset_yolo/
-runs/
-weights/
-
-# Предобученные веса
-*.pt
-*.onnx
-*.pth
-
-# Результаты
-result.csv
-details_*.csv
-score.json
-*.log
-validation_report.txt
-
-# Временные
-*.utf8.txt
-scripts_dump.txt
-create_gen.py
-dataset/generator/fonts/
 dataset_finetune/
 debug_crops/
-details*.csv
-result*.csv
+weights/
+
+# Предобученные веса YOLO (пересоздаются автоматически)
+yolov8s.pt
+
+# Отладка
+*.utf8.txt
+scripts_dump.txt
+details_*.csv
+result_v*.csv
+result_finetune.csv
+final_test.csv
 test_plate*.jpg
-dataset_crnn/
+create_gen.py
+
+# Кеш YOLO (большой, пересоздаётся)
+runs/detect/runs/*/train_batch*.jpg
+runs/detect/runs/*/val_batch*.jpg
+runs/detect/runs/*/labels.jpg
+runs/detect/runs/*/results.png
+runs/detect/runs/*/*.png
+runs/detect/runs/*/args.yaml
+runs/detect/runs/*/results.csv
+runs/detect/predict/
+dataset_shrunk/
+models/
+final_result.csv
+result_v*.csv
+src/predict_v*.py
+src/rebuild_meta*.py
+src/shrink_dataset.py
+src/split_labels.py
+src/fix_meta*.py
+src/test_font.py
+dataset/labels.txt
